@@ -1,0 +1,47 @@
+{
+    "scan_timestamp": "2026-05-03T18:41:55.494817",
+    "sast_findings": 1,
+    "sca_vulnerabilities": 3,
+    "secrets_detected": 0,
+    "gate_passed": false,
+    "blocking_issues": [
+        "3 HIGH severity vulnerable dependencies"
+    ],
+    "high_severity_blocked": true,
+    "details": {
+        "sast": [
+            {
+                "test_id": "B608",
+                "issue": "Possible SQL injection via string-based query construction",
+                "severity": "MEDIUM",
+                "confidence": "MEDIUM",
+                "file": "src/module_1.py",
+                "line": 114
+            }
+        ],
+        "sca": [
+            {
+                "package": "requests",
+                "installed_version": "2.25.0",
+                "cve": "CVE-2023-32681",
+                "severity": "HIGH",
+                "fixed_version": "2.26.0"
+            },
+            {
+                "package": "pillow",
+                "installed_version": "8.3.1",
+                "cve": "CVE-2023-44271",
+                "severity": "HIGH",
+                "fixed_version": "8.4.0"
+            },
+            {
+                "package": "setuptools",
+                "installed_version": "57.0.0",
+                "cve": "CVE-2022-40897",
+                "severity": "HIGH",
+                "fixed_version": "57.1.0"
+            }
+        ],
+        "secrets": []
+    }
+}
