@@ -1,0 +1,8 @@
+requests==2.25.0
+pillow==8.3.1
+cryptography==41.0.0
+urllib3==1.26.4
+django==4.2.5
+# clean pins below
+click==8.1.7
+rich==13.7.0
